@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Топ компаний России</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow-sm mb-4">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active bg-primary text-white" aria-current="page" href="#">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Рейтинг</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Фото</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="companyCarousel" class="carousel slide mb-5 shadow rounded" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#companyCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#companyCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#companyCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#companyCarousel" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#companyCarousel" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#companyCarousel" data-bs-slide-to="5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/lukoil.jpg" class="d-block w-100 carousel-image" alt="Лукойл">
+        </div>
+        <div class="carousel-item">
+          <img src="images/sber.jpg" class="d-block w-100 carousel-image" alt="Сбер">
+        </div>
+        <div class="carousel-item">
+          <img src="images/роснефть.jpg" class="d-block w-100 carousel-image" alt="Роснефть">
+        </div>
+        <div class="carousel-item">
+          <img src="images/vtb.jpg" class="d-block w-100 carousel-image" alt="ВТБ">
+        </div>
+        <div class="carousel-item">
+          <img src="images/Novatek_rus.jpg" class="d-block w-100 carousel-image" alt="Новатэк">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gazprom.png" class="d-block w-100 carousel-image" alt="Газпром">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#companyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#companyCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark"></span>
+      </button>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <div class="row align-items-center flex-md-row flex-column">
+              <div class="col-md-8 text-md-end text-center mb-md-0 mb-3">
+                <h3 class="card-title">Сбер</h3>
+                <p class="card-text">Крупнейший банк в России, а также в Центральной и Восточной Европе.</p>
+                <button class="btn btn-primary btn-sm">Подробнее</button>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="images/sber.jpg" class="img-fluid" alt="Сбер">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="row align-items-center flex-md-row flex-column">
+              <div class="col-md-8 text-md-end text-center mb-md-0 mb-3">
+                <h3 class="card-title">ВТБ</h3>
+                <p class="card-text">Банк ВТБ, ранее известный как Внешторгбанк, был учрежден в 1990 году.</p>
+                <button class="btn btn-primary btn-sm">Подробнее</button>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="images/vtb.jpg" class="img-fluid" alt="ВТБ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12 border-start border-4 border-dark">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">Лукойл</h2>
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <p class="card-text">
+                  «Лукойл» — одна из ведущих нефтяных компаний России и мира,
+                  осуществляющая добычу, переработку и реализацию нефти и нефтепродуктов.
+                </p>
+                <div class="d-md-none text-center mb-3">
+                  <img src="images/lukoil.jpg" class="img-fluid rounded" alt="Лукойл">
+                </div>
+                <p class="card-text">
+                  Компания развивает сеть АЗС, инвестирует в переработку и экологические проекты.
+                </p>
+                <div class="text-center text-md-start">
+                  <button class="btn btn-primary">Подробнее</button>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <img src="images/lukoil.jpg" class="img-fluid rounded" alt="Лукойл">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Газпром</h2>
+            <p class="card-text">
+              «Газпром» — крупнейшая энергетическая компания России, занимающаяся добычей,
+              транспортировкой и продажей природного газа. Является крупнейшим экспортером газа в мире.
+            </p>
+            <p class="card-text">
+              Доля в мировых запасах газа — 15%, в российских — 68%.
+              Также «Газпром» занимается добычей нефти и производством электроэнергии.
+            </p>
+            <div class="text-center text-md-start ">
+              <button class="btn btn-primary">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 border-start border-4 border-dark">
+        <div class="card shadow-sm mb-3">
+          <div class="card-body">
+            <div class="row align-items-center flex-md-row flex-column">
+              <div class="col-md-8 text-md-end text-center mb-md-0 mb-3">
+                <h3 class="card-title">Роснефть</h3>
+                <p class="card-text">Крупная нефтяная компания России. Лидер нефтяной отрасли России и одна из крупнейших нефтяных компаний в мире.</p>
+                <button class="btn btn-primary btn-sm">Подробнее</button>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="images/роснефть.jpg" class="img-fluid" alt="Роснефть">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="row align-items-center flex-md-row flex-column">
+              <div class="col-md-8 text-md-end text-center mb-md-0 mb-3">
+                <h3 class="card-title">Новатэк</h3>
+                <p class="card-text">Крупнейший независимый производитель природного газа в России.</p>
+                <button class="btn btn-primary btn-sm">Подробнее</button>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="images/Novatek_rus.jpg" class="img-fluid" alt="Новатэк">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center py-4 bg-light border-top">
+      <div class="container">
+        <p class="mb-0">
+          Б9123-09.03.04(2) Самохин Данил Юрьевич 2025г
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
