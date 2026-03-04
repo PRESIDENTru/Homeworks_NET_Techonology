@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Калькулятор</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Калькулятор</h2>
+
+        <label><input type="radio" name="type" value="mixed" checked> Смешанная</label>
+        <label><input type="radio" name="type" value="simple"> Простая</label>
+        <button id="show">Показать</button>
+
+        
+        <h3>Дробь 1</h3>
+        <div id="f1"></div>
+            <input id="cel1" placeholder="цел" class="whole">
+            <input id="num" placeholder="чис" class="num">
+            <input id="den"placeholder="зн" class="den">;  
+        <h3>Дробь 2</h3>
+        <div id="f2"></div>
+            <input id="cel2" placeholder="цел" class="whole">
+            <input id="num" placeholder="чис" class="num">
+            <input id="den"placeholder="зн" class="den">`;
+        <h3>Операции</h3>
+        <select id="ops" multiple size="3">
+            <option value="sub">Разность</option>
+            <option value="mul">Произведение</option>
+            <option value="div">Частное</option>
+        </select>
+
+        <br>
+        <button id="calc">Вычислить</button>
+        <button id="clear">Очистить</button>
+
+        <div class="result" id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

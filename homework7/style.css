@@ -1,0 +1,23 @@
+.container{
+    padding:20px;
+    justify-self: center;
+}
+
+input{
+    padding:5px;
+    margin:5px;
+}
+
+button{
+    padding:8px 15px;
+    margin:10px 5px;
+}
+
+.error{
+    border:2px solid red;
+}
+
+.result{
+    margin-top:20px;
+    font-weight:bold;
+}
