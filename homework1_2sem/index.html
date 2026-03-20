@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Топ компаний России</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <h1 class="page-title">Топ компаний России</h1>
+
+  <form id="filter" class="panel">
+    <div class="form-grid">
+
+      <div class="field-group">
+        <label class="field-label" for="structure">Название</label>
+        <input type="text" id="structure" class="field-input" placeholder="Поиск…">
+      </div>
+
+      <div class="field-group">
+        <label class="field-label" for="category">Отрасль</label>
+        <input type="text" id="category" class="field-input" placeholder="Поиск…">
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Выручка (₽ млрд)</label>
+        <div class="range-row">
+          <input type="number" id="revenueFrom" class="field-input" placeholder="от">
+          <input type="number" id="revenueTo"   class="field-input" placeholder="до">
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Сотрудники</label>
+        <div class="range-row">
+          <input type="number" id="employeesFrom" class="field-input" placeholder="от">
+          <input type="number" id="employeesTo"   class="field-input" placeholder="до">
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Год основания</label>
+        <div class="range-row">
+          <input type="number" id="yearFrom" class="field-input" placeholder="от">
+          <input type="number" id="yearTo"   class="field-input" placeholder="до">
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Прибыль (₽ млрд)</label>
+        <div class="range-row">
+          <input type="number" id="profitFrom" class="field-input" placeholder="от">
+          <input type="number" id="profitTo"   class="field-input" placeholder="до">
+        </div>
+      </div>
+
+    </div>
+    <div class="panel__actions">
+      <button type="button" id="Найти" class="btn btn--primary">Найти</button>
+      <button type="button" id="Очистить" class="btn">Очистить</button>
+    </div>
+  </form>
+
+  <form id="sort" class="panel">
+    <h2 class="panel__title">Сортировать по</h2>
+
+    <div class="sort-levels">
+
+      <div class="sort-level">
+        <div class="field-group">
+          <select id="fieldsFirst" class="field-select"></select>
+        </div>
+        <div class="field-group sort-level__desc">
+          <label class="field-label">По убыванию</label>
+          <input type="checkbox" id="fieldsFirstDesc">
+        </div>
+      </div>
+
+      <div class="sort-level">
+        <div class="field-group">
+          <select id="fieldsSecond" class="field-select"></select>
+        </div>
+        <div class="field-group sort-level__desc">
+          <label class="field-label">По убыванию</label>
+          <input type="checkbox" id="fieldsSecondDesc">
+        </div>
+      </div>
+
+      <div class="sort-level">
+        <div class="field-group">
+          <select id="fieldsThird" class="field-select"></select>
+        </div>
+        <div class="field-group sort-level__desc">
+          <label class="field-label">По убыванию</label>
+          <input type="checkbox" id="fieldsThirdDesc">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel__actions">
+      <button type="button" id="sortButton" class="btn btn--primary">Сортировать</button>
+      <button type="button" id="clearSort"  class="btn">Сбросить</button>
+    </div>
+  </form>
+
+  
+  <table id="table"></table>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="table.js"></script>
+  <script src="filter.js"></script>
+  <script src="sort.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
