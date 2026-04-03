@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://d3js.org/d3.v7.min.js"> </script>
+    <script src="image.js"></script>
+    <script src="main.js"></script>
+    <script src="path.js"></script>
+</head>
+<body>
+    <form id="setting">
+      <p>Координаты рисунка<br>
+        <label for="cx">x: </label>
+            <input type="number" id="cx" value="100" max="600" min="0">
+            <label for="cx_finish">до</label>
+            <input type="number" id="cx_finish" value="500" max="600" min="0"><br>
+            <label for="cy">y: </label>
+            <input type="number" id="cy" value="100" max="600" min="0">
+            <label for="cy_finish">до </label>
+            <input type="number" id="cy_finish" value="500" max="600" min="0">
+      </p>
+      <p>Масштаб<br>
+            <label for="scalex">по x: </label>
+            <input type="number" id="scalex" value="1" step="0.1">
+            <label for="scalex_finish">до</label>
+            <input type="number" id="scalex_finish" value="2" step="0.1"><br>
+            <label for="scaley">по y: </label>
+            <input type="number" id="scaley" value="1" step="0.1">
+            <label for="scaley_finish">до</label>
+            <input type="number" id="scaley_finish" value="2" step="0.1">
+        </p>
+        <p>Поворот<br>
+            <label for="rotate">угол: </label>
+            <input type="number" id="rotate" value="0">
+            <label for="rotate_finish">до </label>
+            <input type="number" id="rotate_finish" value="360">
+        </p>
+        <p>Скорость(в мс)
+            <label for="speed">скорость: </label>
+            <input type="number" id="speed" value="500">
+        </p>
+    </form>
+    <p>
+        <input type="button" value="Нарисовать" id="drow">
+        <input type="button" value="Очистить" id="clear">
+        <input type="button" value="Анимировать" id="anim">
+    </p>
+    <svg></svg>
+</body>
+</html>
