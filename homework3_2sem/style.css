@@ -1,0 +1,22 @@
+thead {
+    background-color: b;
+}
+
+table {
+    background-color: rgb(210, 222, 198);
+    margin-top: 10px;
+}
+
+td {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+svg {
+    width: 800px;
+    height: 400px;
+}
+
+label.invalid {
+    color: red;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://d3js.org/d3.v7.min.js"></script>
+        <script src="data2.js"></script>
+        <script src="main.js"></script>
+        <script src="table.js"></script>
+        <script src="chart.js"></script>
+    </head>
+    <body>
+        <h3>Список крупнейших компаний России</h3>
+        <form id="chart-form">
+            <legend>Значение по оси ОХ</legend>
+            <label><input type="radio" name="keyX" value="Отрасль" checked> Отрасль</label><br>
+            <label><input type="radio" name="keyX" value="Год основания"> Год основания</label>
+
+            <legend>Значение по оси ОY (Выручка ₽ млрд)</legend>
+            <label><input type="checkbox" id="cb-max" checked> Максимальная выручка</label><br>
+            <label><input type="checkbox" id="cb-min"> Минимальная выручка</label>
+            <p id="oy-error" class="error">Выберите хотя бы одно значение по оси OY</p>
+
+            <label>Тип графика
+                <select id="chart-type">
+                    <option value="dot">Точечная диаграмма</option>
+                    <option value="bar">Гистограмма</option>
+                    <option value="line">График</option>
+                </select>
+            </label><br><br>
+
+            <button type="button" id="btn-build">Построить</button>
+        </form>
+        <svg></svg>
+        <br><br>
+        <button type="button" id="show">Скрыть таблицу</button>
+        <table id="build">
+        </table>
+    </body>
+</html>
